@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+	int i = 0, j = 0, k = 0,L = 0;
+	printf("请输入行数：");
+	scanf_s("%d", &L);
+	for(i = 1; i <= L; i++)
+	   {
+		for (j = 1; j <= i * 2 - 1; j++)
+			printf("*");
+	    	printf("\n");
+		for (k = i * 2 - 1; k <= L * 2 - 1; k++)
+			printf(" ");
+		    printf("\n");
+	   }
+	for(i = L; i >= 0; i--)
+	{
+		for (j = 1; j <= i * 2 - 1; j++)
+			printf("*");
+		    printf("\n");
+		for (k = i * 2 - 1; k <= L * 2 - 1; k++)
+			printf(" ");
+		    printf("\n");
+	    }
+	    system("pause");
+		return 0;
+}
