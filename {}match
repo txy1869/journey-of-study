@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{   	
+	int ch,i=0;	
+	ch = getchar();	
+	if ( ch=='}')		
+		printf("不匹配");	
+	while ( ch !=EOF)	
+	{		
+		if( ch =='{')			
+			i++;		
+		if( ch =='}')			
+			i--;		
+		ch = getchar();	
+	}	
+	{			
+		if( i == 0)			
+			printf("匹配");		
+		else			
+			printf("不匹配"); 	
+		return 0;
+	}   
+
+
+
+
+
+
+
